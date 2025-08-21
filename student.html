@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://student.dct.edu.ph//dist/img/DCTLogo2.png" alt="LOGO" width="40" height="40" class="d-inline-block align-text-top">
+        Group #5
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+          <a class="nav-link active"href="student.html">Students</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="attendance.html">Attendance</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="form.html">Form</a>
+          </li> 
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>   
+<div class="container shadow bg-white p-2 mt-2 mb-2">
+  <div class="container my-4">
+    <div class="row">
+      <div class="col-md-4 d-flex flex-column gap-3">
+        <div class="card text-bg-primary">
+          <div class="card-body">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">Total Students</p>
+            <a href="form.html" class="btn btn-outline-light">Add Student</a>
+          </div>
+        </div>
+        <div class="card text-bg-success">
+          <div class="card-body">
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">Total Present</p>
+            <a href="attendance.html#present" class="btn btn-outline-light">See More...</a>
+          </div>
+        </div>
+        <div class="card text-bg-danger">
+          <div class="card-body">
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">Total Absent</p>
+            <a href="attendance.html" class="btn btn-outline-light">See More...</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="table-responsive h-100">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Student No.</th>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Gender</th>
+                <th>Civil Status</th>
+                <th>Nationality</th>
+                <th>Date of Birth</th>
+                <th>Place of Birth</th>
+                <th>Address</th>
+                <th>Religion</th>
+                <th>Contact No.</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>STU2025001</td>
+                <td class="text-nowrap">John Doe</td>
+                <td></td>
+                <td>Male</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td>January 1, 2000</td>
+                <td>Street, Barangay, City, Province</td>
+                <td>Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td>Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>STU2025002</td>
+                <td class="text-nowrap">Jane Smith</td>
+                <td></td>
+                <td>Female</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td>January 1, 2000</td>
+                <td>Street, Barangay, City, Province</td>
+                <td>Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td>Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>STU2025003</td>
+                <td class="text-nowrap">Michael Brown</td>
+                <td></td>
+                <td>Male</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td>January 1, 2000</td>
+                <td>Street, Barangay, City, Province</td>
+                <td>Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td>Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>STU2025004</td>
+                <td class="text-nowrap">Emily Davis</td>
+                <td><span class="badge bg-danger">Absent</span></td>
+                <td>Female</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td class="text-nowrap">January 1, 2000</td>
+                <td class="text-nowrap">Street, Barangay, City, Province</td>
+                <td class="text-nowrap">Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td class="text-nowrap">Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>STU2025005</td>
+                <td class="text-nowrap">Chris Johnson</td>
+                <td><span class="badge bg-success">Present</span></td>
+                <td>Male</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td class="text-nowrap">January 1, 2000</td>
+                <td class="text-nowrap">Street, Barangay, City, Province</td>
+                <td class="text-nowrap">Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td class="text-nowrap">Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>STU2025006</td>
+                <td class="text-nowrap">Sarah Lee</td>
+                <td><span class="badge bg-danger">Absent</span></td>
+                <td>Female</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td class="text-nowrap">January 1, 2000</td>
+                <td class="text-nowrap">Street, Barangay, City, Province</td>
+                <td class="text-nowrap">Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td class="text-nowrap">Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>STU2025007</td>
+                <td class="text-nowrap">David Clark</td>
+                <td><span class="badge bg-success">Present</span></td>
+                <td>Male</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td class="text-nowrap">January 1, 2000</td>
+                <td class="text-nowrap">Street, Barangay, City, Province</td>
+                <td class="text-nowrap">Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td class="text-nowrap">Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>STU2025008</td>
+                <td class="text-nowrap">Laura Wilson</td>
+                <td><span class="badge bg-danger">Absent</span></td>
+                <td>Female</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td class="text-nowrap">January 1, 2000</td>
+                <td class="text-nowrap">Street, Barangay, City, Province</td>
+                <td class="text-nowrap">Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td class="text-nowrap">Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>STU2025009</td>
+                <td class="text-nowrap">Ryan Martinez</td>
+                <td><span class="badge bg-success">Present</span></td>
+                <td>Male</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td class="text-nowrap">January 1, 2000</td>
+                <td class="text-nowrap">Street, Barangay, City, Province</td>
+                <td class="text-nowrap">Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td class="text-nowrap">Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>STU2025010</td>
+                <td class="text-nowrap">Alice Taylor</td>
+                <td><span class="badge bg-danger">Absent</span></td>
+                <td>Female</td>
+                <td>Single</td>
+                <td>Filipino</td>
+                <td class="text-nowrap">January 1, 2000</td>
+                <td class="text-nowrap">Street, Barangay, City, Province</td>
+                <td class="text-nowrap">Street, Barangay, City, Province, Zipcode, Philippines</td>
+                <td class="text-nowrap">Roman Catholic</td>
+                <td>09123456789</td>
+                <td>sample@email.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  <div class="text-center my-5">
+  <hr>
+  <h1>Departments</h1>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+        class="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        class="bg-dark" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        class="bg-dark" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        class="bg-dark" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        class="bg-dark" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+        class="bg-dark" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+        class="bg-dark" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+        class="bg-dark" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+        class="bg-dark" aria-label="Slide 9"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://dct.edu.ph/wp-content/uploads/2024/11/GS-Logo-150x150.png" class="d-block mx-auto w-50"
+          alt="Elementary Department">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark fs-2">Elementary Department</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://dct.edu.ph/wp-content/uploads/2024/11/JHS-Logo-300x300.png" class="d-block mx-auto w-50"
+          alt="Junior Highschool Department">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark fs-2">Junior Highschool Department</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://dct.edu.ph/wp-content/uploads/2024/11/SHS-Logo-300x300.png" class="d-block mx-auto w-50"
+          alt="Senior Highschool Department">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark fs-2">Senior Highschool Department</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://dct.edu.ph/wp-content/uploads/2024/11/CLA-Logo-300x300.png" class="d-block mx-auto w-50"
+          alt="College of Liberal Arts">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark fs-2">College of Liberal Arts</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://dct.edu.ph/wp-content/uploads/2024/11/CED-Logo-300x300.png" class="d-block mx-auto w-50"
+          alt="College of Education">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark fs-2">College of Education</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://dct.edu.ph/wp-content/uploads/2024/11/CHM-Logo-300x300.png" class="d-block mx-auto w-50"
+          alt="College of Hospitality Management">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark fs-2">College of Hospitality Management</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://dct.edu.ph/wp-content/uploads/2024/11/CCS-Logo-300x300.png" class="d-block mx-auto w-50"
+          alt="College of Computer Studies">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark fs-2">College of Computer Studies</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://dct.edu.ph/wp-content/uploads/2024/11/CBA-Logo-300x300.png" class="d-block mx-auto w-50"
+          alt="College of Business and Accountancy">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark fs-2">College of Business and Accountancy</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://dct.edu.ph/wp-content/uploads/2024/11/CCJE-Logo-300x300.png" class="d-block mx-auto w-50"
+          alt="College of Criminal Justice Education">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="text-dark fs-2">College of Criminal Justice Education</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <i class="bi bi-chevron-left display-4 text-dark"></i>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <i class="bi bi-chevron-right display-4 text-dark"></i>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+  <hr>
+
+    <div class="my-4">
+      <h1 class="text-center">PVMGO</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card text-center mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Vision</h5>
+              <p>A God-loving educational community with passion for truth.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card text-center mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Mission</h5>
+              <p>We commit ourselves to promote the truth to holistically transform persons for the service of humanity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card text-center mb-3">
+        <div class="card-body">
+          <h5>Goal, Core Values and Objectives</h5>
+          <p>We aim to cultivate learner-centered practices that promote 21st-century skills and a way of life centered on faith, wisdom, patriotism.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-center mb-3">
+            <div class="card-body">
+              <h5>Faith (Fides)</h5>
+              <p>Practice Gospel values in every aspect of life.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center mb-3">
+            <div class="card-body">
+              <h5>Patriotism (Patria)</h5>
+              <p>Promote Filipino Christian values.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center mb-3">
+            <div class="card-body">
+              <h5>Wisdom (Sapientia)</h5>
+              <p>Possess knowledge and skills for effective communication and research.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
